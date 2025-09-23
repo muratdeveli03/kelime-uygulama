@@ -8,6 +8,7 @@ import { Progress } from './components/ui/progress';
 import { Badge } from './components/ui/badge';
 import { Separator } from './components/ui/separator';
 import { toast } from 'sonner';
+import { Toaster } from './components/ui/sonner';
 import './App.css';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
