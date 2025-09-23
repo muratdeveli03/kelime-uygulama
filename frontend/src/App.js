@@ -371,7 +371,7 @@ const StudyPage = ({ user, onLogout }) => {
             <p className="text-sm text-gray-500">Yarın yeni kelimelerle tekrar gel! 📚</p>
             
             <div className="space-y-2 pt-4">
-              <Button onClick={() => window.location.href = '/'} className="w-full" data-testid="dashboard-btn">
+              <Button onClick={() => navigate('/')} className="w-full" data-testid="dashboard-btn">
                 🏠 Ana Sayfaya Dön
               </Button>
               <Button variant="outline" onClick={onLogout} className="w-full" data-testid="logout-btn">
