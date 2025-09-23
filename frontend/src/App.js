@@ -474,6 +474,7 @@ const StudyPage = ({ user, onLogout }) => {
 const WordsList = ({ user, onLogout }) => {
   const [words, setWords] = useState([]);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchWords();
