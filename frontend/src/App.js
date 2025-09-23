@@ -522,7 +522,7 @@ const WordsList = ({ user, onLogout }) => {
             <p className="text-gray-600">Toplam {words.length} kelime</p>
           </div>
           <div className="flex gap-2">
-            <Button variant="outline" onClick={() => window.location.href = '/'} data-testid="dashboard-btn">
+            <Button variant="outline" onClick={() => navigate('/')} data-testid="dashboard-btn">
               🏠 Ana Sayfa
             </Button>
             <Button variant="outline" onClick={onLogout} data-testid="logout-btn">
