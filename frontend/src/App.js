@@ -155,6 +155,7 @@ const Login = ({ onLogin, setUserType }) => {
 const StudentDashboard = ({ user, onLogout }) => {
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchStats();
