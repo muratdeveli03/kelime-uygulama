@@ -296,6 +296,7 @@ const StudyPage = ({ user, onLogout }) => {
   const [feedback, setFeedback] = useState(null);
   const [loading, setLoading] = useState(true);
   const [completed, setCompleted] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchNextWord();
