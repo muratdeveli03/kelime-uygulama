@@ -96,6 +96,11 @@ def is_midnight_passed(last_date: Optional[datetime]) -> bool:
     
     now = datetime.now(timezone.utc)
     today_midnight = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    
+    # Ensure last_date is timezone-aware
+    if last_date.tzinfo is None:
+        last_date = last_date.replace(tzinfo=timezone.utc)
+    
     last_midnight = last_date.replace(hour=0, minute=0, second=0, microsecond=0)
     
     return today_midnight > last_midnight
