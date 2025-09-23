@@ -264,7 +264,7 @@ const StudentDashboard = ({ user, onLogout }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Button 
             className="h-16 text-lg"
-            onClick={() => window.location.href = '/study'}
+            onClick={() => navigate('/study')}
             disabled={!stats?.next_study_words}
             data-testid="start-study-btn"
           >
@@ -274,7 +274,7 @@ const StudentDashboard = ({ user, onLogout }) => {
           <Button 
             variant="outline" 
             className="h-16 text-lg"
-            onClick={() => window.location.href = '/words'}
+            onClick={() => navigate('/words')}
             data-testid="view-words-btn"
           >
             📖 Tüm Kelimeleri Gör
