@@ -758,6 +758,7 @@ function App() {
             } 
           />
         </Routes>
+        <Toaster />
       </div>
     </Router>
   );
