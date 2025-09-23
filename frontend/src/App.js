@@ -394,7 +394,7 @@ const StudyPage = ({ user, onLogout }) => {
             <p className="text-sm text-gray-600">Kutu {currentWord?.current_box} | Kalan: {currentWord?.remaining_words}</p>
           </div>
           <div className="flex gap-2">
-            <Button variant="outline" size="sm" onClick={() => window.location.href = '/'} data-testid="dashboard-btn">
+            <Button variant="outline" size="sm" onClick={() => navigate('/')} data-testid="dashboard-btn">
               🏠 Ana Sayfa
             </Button>
             <Button variant="outline" size="sm" onClick={onLogout} data-testid="logout-btn">
